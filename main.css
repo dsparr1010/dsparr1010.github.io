@@ -1,12 +1,33 @@
-a:hover {
-    background: rgba(0,0,0,0);
-    color: #17d5ee;
-    box-shadow: inset 0 0 0 3px #17d5ee;
+a {
+    text-decoration: none;
 }
 
-.body {
+a:hover {
+    -webkit-text-stroke: 2px white;
+    paint-order: stroke fill;
+    transform: scale(2.6);
+    transition: all .1s ease-in-out;
+}
+
+.background-image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image:  
+    url(https://images.unsplash.com/photo-1455612693675-112974d4880b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=500&q=60);
+    background-size: cover;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.body-text {
     display: flex;
     flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 100vh;
     line-height: 1.5em;
 }
@@ -14,23 +35,25 @@ a:hover {
 .links {
     font-family: fantasy;
     font-size: 140%;
-    padding: 10px 50px;
+    letter-spacing: 1px;
+    padding: 15px;
+    word-spacing: 10px;
 }
 
 /* header */
 .header-nameBox {
     background-image: linear-gradient(to left, blue, aqua);
-    border: solid black 8px;
+    border: solid rgb(78, 72, 72) 8px;
     color: black;
     display: flex;
-    font-size: 30px;
-    padding: 40px 40px 56px 40px;
-    position: relative; top: 52px; left: -25px;
-    text-shadow: rgb(25, 83, 192) 1px 0 10px;
+    font-size: 48px;
+    padding: 25px 30px 40px 30px;
+    position: relative; top: -25px; left: -25px;
+    text-shadow: 3px 3px 3px rgb(25, 83, 192);
 }
 .header-topBar {
-    background-color: tomato;
-    border-bottom: 5px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    border-bottom: 5px solid grey;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -38,18 +61,23 @@ a:hover {
     padding: 24px;
 }
 
-/*about me content*/
+/*about me section*/
 .section-border {
-    border-bottom: 8px solid grey;
+    border-bottom: 4px solid grey;
+    text-align: center;
 }
 
 .section-content {
-    max-width: 960px
+    max-width: 960px;
 }
 
 .section-img {
+    border: 2px solid black;
+    border-radius: 10px 100px / 120px;
     float: left;
     height: 15em;
+    padding-bottom: 1%;
+    padding-right: 1%;
     width: 22em;
 }
 
@@ -61,9 +89,33 @@ a:hover {
 
 /*footer*/
 footer {
-    background-color: burlywood;
-    color: white;
+    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    border-top: 3px solid grey;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
+    max-height: 15px;
     padding: 24px;
+}
+
+/*scrollbar*/
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(32, 5, 5);
 }
