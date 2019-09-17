@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type= "text/css" href= "normalize.css">
+    <link rel="stylesheet" type= "text/css" href= "main.css">
+</head>
+    <title>Contact</title>
+    <div class="background-image"></div>
+    <body class="body-text">
+        <header class="header-topBar">
+            <div class="header-nameBox">Debra Sparr</div>
+            <nav class="links">
+                <a href="./index.html">About</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+
+    <h1>Get in touch</h1>
+    <p>If you have any questions, please feel free to contact me.</p>
+    <section class="section-contact">
+        <div class="section-email">
+            Send me an <a href="mailto:dsparr1010@gmail.com" target="_blank">email</a>!
+            </div>
+        <br>
+        <div class="section-cell">
+            or call directly at 
+            <div class="section-number">(555) 335-5655</div>
+        </div>
+     </section>
+     <br>
+    <form class="form-contact" action="#" method="POST" enctype="multipart/form-data">
+        <div class="form-name">
+            <label class="required" for="name"> Your name </label>
+            <br>
+            <input class="form-input" name="name" type="text" value="" size="30">
+            <br>
+            <span class="form-error"></span>
+        </div>
+        <div class="form-email">
+            <label class="required" for="email">Your email </label>
+            <br>
+            <input class="form-input" name="email" type="text" value="" size="30">
+            <br>
+            <span class="form-error"></span>
+            </div>
+        <div class="form-message">
+            <label class="required" for="message">Your message </label>
+            <br>
+            <textarea class="form-message" name="message" rows="7" cols="30"></textarea>
+                <br>
+            <span class="form-error"></span>
+        </div>
+
+        <input class="submit_button" type="submit" value="Send email">
+    </form>
+
+</body>
+</html>
