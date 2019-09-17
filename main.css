@@ -1,0 +1,69 @@
+a:hover {
+    background: rgba(0,0,0,0);
+    color: #17d5ee;
+    box-shadow: inset 0 0 0 3px #17d5ee;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    line-height: 1.5em;
+}
+
+.links {
+    font-family: fantasy;
+    font-size: 140%;
+    padding: 10px 50px;
+}
+
+/* header */
+.header-nameBox {
+    background-image: linear-gradient(to left, blue, aqua);
+    border: solid black 8px;
+    color: black;
+    display: flex;
+    font-size: 30px;
+    padding: 40px 40px 56px 40px;
+    position: relative; top: 52px; left: -25px;
+    text-shadow: rgb(25, 83, 192) 1px 0 10px;
+}
+.header-topBar {
+    background-color: tomato;
+    border-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-height: 30px;
+    padding: 24px;
+}
+
+/*about me content*/
+.section-border {
+    border-bottom: 8px solid grey;
+}
+
+.section-content {
+    max-width: 960px
+}
+
+.section-img {
+    float: left;
+    height: 15em;
+    width: 22em;
+}
+
+.section-main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/*footer*/
+footer {
+    background-color: burlywood;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
